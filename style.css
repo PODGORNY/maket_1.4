@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "TTLakes_medium";
+    src: url('fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTLakes_bold";
+    src: url('fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTLakes_demibold";
+    src: url('fonts/TTLakes/TTLakesCondensed-DemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 100vw;
+}
+
+.page__navigate {
+  width: 320px;
+  height: 100vh;
+  box-shadow: 
+  -2px 0px 4px rgba(69, 79, 126, 0.02),
+  16px 0px 52px rgba(14, 24, 80, 0.2);
+
+}
+
+/*---------------------header----*/
+.navigate-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 46px;
+  background-color: #ffffff;
+}
+
+.btn {
+  padding: 0;
+  border: none;   
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  background-color: transparent;
+
+  transition-duration: 2s;
+}
+
+.btnclose-menu {
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 16px;
+}
+
+.btnicon-page {
+  margin-top: 23px;
+  margin-right: 78px;
+}
+
+.btnsearch {
+  margin-top: 24px;
+  margin-right: 24px;
+}
+
+/*---------------------------selection-----*/
+.navigate-selection {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.item-title {
+    font-family: "TTLakes_medium", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    white-space: nowrap;
+}
+
+.item-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.item-label {
+   background-image: url(img/highlight.png);
+   width: 4px;
+   height: 32px; 
+}
+
+.item-btn {
+    width: 296px;
+    padding: 0;
+    margin-left: 24px;
+}
+
+.btn-rem {
+    margin-left: 22px;
+}
+
+.active {
+    color: #7E7E82;
+}
+
+/*--------------------------------navigate-footer--------*/
+
+.navigate-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 70%;
+  margin-bottom: 32px;
+
+  margin-left: 24px;
+  gap: 16px;
+}
+
+.btn-contact {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.mail a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+
+  font-family: "TTLakes_medium", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+}
+
+.number a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+
+  font-family: "TTLakes_bold", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1B1C21;
+}
+
+/*---------------language-----*/
+.language-page {
+  display: flex;
+  justify-content: flex-start;
+  gap: 7px;
+
+  margin-top: 26px;
+
+  font-family: "TTLakes_medium", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+}
+
+/*-------------------------fx-----*/
+.navFX:hover {
+  border-radius: 2px;
+  background-color: #ff3e79;
+   
+  cursor: pointer;
+}
+
+@keyframes borderglide {
+  0% {
+    background-image: linear-gradient(to right, white, white);
+    opacity: 0.5;
+  }
+
+  100% {
+    background-image: linear-gradient(to right, white, rgb(207, 207, 207) 100%);
+    opacity: 1;
+  }
+}
+
+.glideFX:hover {
+  animation-name: borderglide;
+  animation-duration: 0s;
+  animation-fill-mode: forwards;
+
+  cursor: pointer;
+}

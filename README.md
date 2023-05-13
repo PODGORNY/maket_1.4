@@ -1,1 +1,1 @@
-# [maket_webcore_1.4] (https://podgorny.github.io/maket_1.4/)
+# maket [webcore_1.4](https://podgorny.github.io/maket_1.4/)

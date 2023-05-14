@@ -75,6 +75,7 @@ body {
 /*---------------------------selection-----*/
 .navigate-selection {
     margin: 0;
+    margin-bottom: 80%;
     padding: 0;
 }
 
@@ -127,7 +128,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 70%;
   margin-bottom: 32px;
 
   margin-left: 24px;

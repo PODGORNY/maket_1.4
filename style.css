@@ -30,7 +30,7 @@ body {
 
 .page__navigate {
   width: 320px;
-  height: 100vh;
+  height: 1024px;
   box-shadow: 
   -2px 0px 4px rgba(69, 79, 126, 0.02),
   16px 0px 52px rgba(14, 24, 80, 0.2);
@@ -75,7 +75,6 @@ body {
 /*---------------------------selection-----*/
 .navigate-selection {
     margin: 0;
-    margin-bottom: 264px;
     padding: 0;
 }
 
@@ -128,6 +127,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: 264px;
   margin-bottom: 32px;
 
   margin-left: 24px;

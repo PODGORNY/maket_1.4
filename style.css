@@ -22,27 +22,51 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  
 }
 
 .page {
   width: 100vw;
+  height:100vh;
+  overflow:hidden;
 }
 
 .page__navigate {
   width: 320px;
   height: 1024px;
+  max-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
   box-shadow: 
   -2px 0px 4px rgba(69, 79, 126, 0.02),
   16px 0px 52px rgba(14, 24, 80, 0.2);
-
 }
 
 /*---------------------header----*/
-.navigate-header {
+.page__navigate-header {
   display: flex;
   align-items: center;
   margin-bottom: 46px;
   background-color: #ffffff;
+}
+
+.btn-circle {
+  display: flex;
+  background-color: #ff3e79;
+  border: 1px solid #ff3e79;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.btn-circle__img {
+  margin: auto;
 }
 
 .btn {
@@ -73,18 +97,22 @@ body {
 }
 
 /*---------------------------selection-----*/
-.navigate-selection {
+.page__navigate-selection {
     margin: 0;
     padding: 0;
 }
 
-.item {
+ul {
+  padding-left: 0;
+}
+
+.page__navi {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.item-title {
+.navi-title {
     font-family: "TTLakes_medium", sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -93,7 +121,7 @@ body {
     white-space: nowrap;
 }
 
-.item-container {
+.navi-container {
     display: flex;
     justify-content: flex-start;
     margin: 0;
@@ -101,13 +129,17 @@ body {
     align-items: center;
 }
 
-.item-label {
+.navi-label {
    background-image: url(img/highlight.png);
    width: 4px;
    height: 32px; 
 }
 
-.item-btn {
+li {
+list-style-type: none;
+}
+
+.navi-btn {
     width: 296px;
     padding: 0;
     margin-left: 24px;
@@ -123,7 +155,7 @@ body {
 
 /*--------------------------------navigate-footer--------*/
 
-.navigate-footer {
+.page__navigate-footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -140,7 +172,7 @@ body {
   gap: 16px;
 }
 
-.mail a {
+.mail-title {
   text-decoration: none;
   font: inherit;
   color: inherit;
@@ -153,7 +185,7 @@ body {
   color: #1B1C21;
 }
 
-.number a {
+.number-title {
   text-decoration: none;
   font: inherit;
   color: inherit;
@@ -167,7 +199,7 @@ body {
 }
 
 /*---------------language-----*/
-.language-page {
+.page__language-page {
   display: flex;
   justify-content: flex-start;
   gap: 7px;
